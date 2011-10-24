@@ -1,0 +1,81 @@
+html {
+    background: #01101d url('background.jpg') no-repeat fixed 50% 50%;
+    text-shadow: 1px 1px #000;
+}
+
+.deck-container {
+    font: 30px Georgia, sans-serif;
+}
+
+.deck-container h2 {
+    font-size: 1.8em;
+}
+
+.yui3-js-enabled .deck-container > .slide {
+    background: transparent url('cornerlogo.png') no-repeat bottom left;
+    padding-bottom: 150px;
+}
+
+.yui3-js-enabled .deck-container > .slide.title {
+    background: transparent url('biglogo.png') no-repeat 0 50%;
+}
+
+.deck-container > .slide.title * {
+    left: 45%;
+}
+
+.deck-container > .slide.title p {
+    padding-top: 25px;
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+}
+
+.yui3-js-enabled .deck-container > .slide.title p {
+    position: absolute;
+    right: 0;
+    top: 80%;
+}
+
+.yui3-js-enabled .deck-container > .slide.title h1 {
+    top: 47%;
+    font-size: 3.5em;
+}
+
+#yuiconf-logo {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+html, .deck-container, .deck-container select, .deck-container input, .deck-container textarea {
+    color: #fefffe;
+}
+
+.deck-container h2 {
+    border: 0;
+}
+
+.deck-container a {
+    color: #ffdfbc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.deck-container a:hover, .deck-container a:focus {
+    color: #fdc18c;
+}
+
+.deck-container a:link {
+    -webkit-tap-highlight-color: #ccb397;
+}
+
+.deck-container pre {
+    background: #000;
+    border: 0;
+}
+
+.deck-container code {
+    color: #fff;
+    font-weight: bold;
+}

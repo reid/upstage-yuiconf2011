@@ -1,0 +1,13 @@
+.deck-container div, .deck-container span, .deck-container object, .deck-container iframe,
+.deck-container h1, .deck-container h2, .deck-container h3, .deck-container h4, .deck-container h5, .deck-container h6, .deck-container p, .deck-container blockquote, .deck-container pre,
+.deck-container abbr, .deck-container address, .deck-container cite, .deck-container code, .deck-container del, .deck-container dfn, .deck-container em, .deck-container img, .deck-container ins, .deck-container kbd, .deck-container q, .deck-container samp,
+.deck-container small, .deck-container strong, .deck-container sub, .deck-container sup, .deck-container var, .deck-container b, .deck-container i, .deck-container dl, .deck-container dt, .deck-container dd, .deck-container ol, .deck-container ul, .deck-container li,
+.deck-container fieldset, .deck-container form, .deck-container label, .deck-container legend,
+.deck-container table, .deck-container caption, .deck-container tbody, .deck-container tfoot, .deck-container thead, .deck-container tr, .deck-container th, .deck-container td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
