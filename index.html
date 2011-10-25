@@ -56,7 +56,7 @@
     <div class="slide" id="sample-code">
         <h2>Sample Code?</h2>
         <p>Upstage even can show off your code!</p>
-        <pre><code>function Conference() {
+        <pre class="prettyprint"><code>function Conference() {
     this.attendees = "you";
 }
 
@@ -132,6 +132,14 @@ if (yuiconf.isAwesome()) deck.fire("warp", 1);</code></pre>
             "upstage-slideshow": {
                 fullpath: "build/upstage-slideshow-min.js",
                 requires: ["oop", "node", "widget"]
+            },
+            "gallery-prettify": {
+                fullpath: "http://derek.github.com/sandbox/yui/gallery-prettify/gallery-prettify.js",
+                requires: ["gallery-prettify-cssnight"]
+            },
+            "gallery-prettify-cssnight": {
+                fullpath: "theme/gallery-prettify-night.css",
+                type: "css"
             }
             // For controls plugin-widget:
             // It should be a sub-Widget, but pluggable into deck.
@@ -146,6 +154,7 @@ if (yuiconf.isAwesome()) deck.fire("warp", 1);</code></pre>
         "upstage-permalink",
         "upstage-gesture",
         "upstage-blank",
+        "gallery-prettify", // Optional: Syntax highlighting.
         function (Y) {
             // Upstage is a YUI widget.
             var deck = new Y.Upstage({
@@ -162,6 +171,9 @@ if (yuiconf.isAwesome()) deck.fire("warp", 1);</code></pre>
             ]);
 
             deck.render();
+
+            // Syntax highlighting for .prettyprint elements.
+            if (Y.prettyPrint) Y.prettyPrint();
         }
     );
 </script>

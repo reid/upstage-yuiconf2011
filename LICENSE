@@ -33,10 +33,13 @@ This repository contains files adapted from the Upstage project.
 The Upstage project is Copyright 2011 Yahoo! Inc. and provided
 under the same license as above.
 
-The above license applies to all files included herein except
-build/upstage-deck-core-min.css and theme/transition.css.
+The above license applies to all files included herein except those defined below.
 
 These files are adapted and modified from the deck.js project.
+
+ * build/upstage-deck-core-min.css
+ * theme/transition.css
+
 The deck.js project is used under the following MIT license:
 
 Copyright 2011 Caleb Troughton.
@@ -58,3 +61,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+This file is adapted from the Google Code Prettify project.
+
+ * theme/gallery-prettify-night.css
+
+The Google Code Prettify project is used under the following license:
+
+Copyright 2011 Mike Samuel et al
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
