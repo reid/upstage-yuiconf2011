@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Getting Started with Upstage</title>
+    <title>HTML Decks with Upstage</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=1024, user-scalable=no">
@@ -21,41 +21,47 @@
 <div id="bd" class="deck-container">
 
     <div class="slide title">
-        <h1>Welcome to Upstage</h1>
+        <h1>HTML Decks with Upstage</h1>
         <p>Reid Burke, Yahoo! Inc.</p>
     </div>
 
     <div class="slide" id="how">
-        <h2>How Does It Work?</h2>
-        <p>Upstage is a slideshow system built on <a href="http://yuilibrary.com/">YUI 3</a>.</p>
-        <ol>
-            <li>
-                <h3>Create Slides</h3>
-                <p>Slides are plain old HTML.</p>
-            </li>
-            <li>
-                <h3>Tweak Styles</h3>
-                <p>Upstage can be used with deck.js themes.</p>
-            </li>
-            <li>
-                <h3>Extend and Enjoy</h3>
-                <p>Built on YUI's rock-solid Widget architecture.</p>
-            </li>
-        </ol>
+        <h2>What's Upstage?</h2>
+        <p>Upstage lets you create HTML presentations.</p>
+        <div style="font-size: 1.5em;">
+            <div class="slide">
+                <p>Slides are plain HTML.</p>
+
+                <pre class="prettyprint" style="float: right; width: 30%; margin: 10px; font-size: 0.5em;"><code>&lt;div class=&quot;slide&quot;&gt;
+  &lt;h2&gt;My Wonderful Title&lt;/h2&gt;
+  &lt;p&gt;Some points:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Point 1&lt;/li&gt;
+    &lt;li&gt;Point 2&lt;/li&gt;
+    &lt;li&gt;Point 3&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <p><span class="slide">Upstage transforms your markup into a presentation</span><span class="slide">,
+            complete with transitions, touch and mouse gestures, and keyboard interaction.</p>
+
+            <p><span class="slide">Upstage itself is a tiny (2.3K) <a href="http://yuilibrary.com/">YUI 3</a> Widget</span><span class="slide">,
+            which relies on Widget <em>plugins</em> to provide its features</span><span class="slide">, so you can use only what you need.</span>
+        </div>
     </div>
 
     <div class="slide" id="getting-started">
         <h2>Getting Started</h2>
         <ol>
-            <li>Get the <a href="https://github.com/reid/upstage/tree/widget">Upstage widget branch</a>.</li>
-            <li>Copy <code>index.html</code> and the <code>build</code> directory to another directory.</li>
-            <li>Start writing!</li>
+            <li>Get the <a href="https://github.com/reid/upstage-yuiconf2011">Upstage YUIConf 2011</a> code.</li>
+            <li>Edit index.html and go!</li>
         </ol>
     </div>
 
     <div class="slide" id="sample-code">
-        <h2>Sample Code?</h2>
-        <p>Upstage even can show off your code!</p>
+        <h2>So You'd Like To Present Code?</h2>
+        <p>Code is highlighted by Google Code Prettify.</p>
         <pre class="prettyprint"><code>function Conference() {
     this.attendees = "you";
 }
@@ -72,9 +78,10 @@ if (yuiconf.isAwesome()) deck.fire("warp", 1);</code></pre>
     </div>
 
     <div class="slide" id="architecture">
+        <h2>Upstage Plugins</h2>
+        <p>The Upstage core, <code>upstage-slideshow</code>, provides the framework for the presentation.
 
-        <h2>Architecture</h2>
-        <p>The Upstage core provides the architecture for the presentation. Make it useful by plugging in some of these:</p>
+        <p class="slide">Make it useful by plugging in some of these:</p>
         
         <ul>
             <li class="slide" id="architecture-keyboard">
@@ -86,13 +93,19 @@ if (yuiconf.isAwesome()) deck.fire("warp", 1);</code></pre>
             </li>
             
             <li class="slide" id="architecture-blanker">
-                <strong>UpstageBlanker</strong>: Simple screen blanking.
+                <strong>UpstageBlanker</strong>: Try it out: press <code>B</code> to blank the show. Great for Q&amp;A!
             </li>
 
             <li class="slide" id="architecture-permalink">
                 <strong>UpstagePermalink</strong>: Provides permalinks to slides that are unique per-slide.
             </li>
         </ul>
+    </div>
+
+    <div class="slide">
+        <h2>Upstage is Easy!</h2>
+
+        <p style="font-size: 1.3em">Get the <a href="https://github.com/reid/upstage-yuiconf2011">Upstage YUIConf 2011</a> code now!</p>
     </div>
 <!-- .presentation -->
 </div>
