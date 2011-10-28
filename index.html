@@ -49,6 +49,18 @@
                 display: none;
                 /* Get crazy with CSS animations! http://css3please.com/ */
             }
+
+            #how .plugs {
+                opacity: 0;
+                -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+                 -moz-transition: all 0.3s ease-out;  /* FF4+ */
+                  -ms-transition: all 0.3s ease-out;  /* IE10? */
+                   -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+                      transition: all 0.3s ease-out;
+            }
+            .on-slide-plugins #how .plugs, .on-slide-simple #how .plugs {
+                opacity: 1;
+            }
         </style>
         <h2>What's Upstage?</h2>
         <p>Upstage lets you create HTML presentations.</p>
@@ -65,14 +77,14 @@
                 <pre class="prettyprint yui"><code>var deck = new Y.Upstage({
     srcNode: "#bd"
 });
-
+<span class="plugs">
 deck.plug([
     Y.Plugin.UpstageKeyboard,
     Y.Plugin.UpstageBlank,
     Y.Plugin.UpstageGesture,
     Y.Plugin.UpstagePermalink
 ]);
-
+</span>
 deck.render();</code></pre>
 
             <p>Slides are plain HTML.</p>
