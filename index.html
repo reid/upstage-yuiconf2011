@@ -26,11 +26,34 @@
     </div>
 
     <div class="slide" id="how">
+        <style>
+            /* CSS for the code sample. */
+            #how pre {
+                float: right;
+                width: 30%;
+                margin: 10px;
+                font-size: 0.5em;
+            }
+            #how .yui {
+                display: none;
+            }
+            #how .html {
+                display: inline;
+            }
+            /* Show the YUI code when these slides are displayed. */
+            .on-slide-widget #how .yui, .on-slide-plugins #how .yui, .on-slide-simple #how .yui {
+                display: inline;
+                /* Get crazy with CSS animations! http://css3please.com/ */
+            }
+            .on-slide-widget #how .html, .on-slide-plugins #how .html, .on-slide-simple #how .html {
+                display: none;
+                /* Get crazy with CSS animations! http://css3please.com/ */
+            }
+        </style>
         <h2>What's Upstage?</h2>
         <p>Upstage lets you create HTML presentations.</p>
         <div style="font-size: 1.5em;">
-            <div class="slide">
-                <pre class="prettyprint" style="float: right; width: 30%; margin: 10px; font-size: 0.5em;"><code>&lt;div class=&quot;slide&quot;&gt;
+                <pre class="prettyprint html"><code>&lt;div class=&quot;slide&quot;&gt;
   &lt;h2&gt;My Wonderful Title&lt;/h2&gt;
   &lt;p&gt;Some points:&lt;/p&gt;
   &lt;ul&gt;
@@ -39,7 +62,18 @@
     &lt;li&gt;Point 3&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
-            </div>
+                <pre class="prettyprint yui"><code>var deck = new Y.Upstage({
+    srcNode: "#bd"
+});
+
+deck.plug([
+    Y.Plugin.UpstageKeyboard,
+    Y.Plugin.UpstageBlank,
+    Y.Plugin.UpstageGesture,
+    Y.Plugin.UpstagePermalink
+]);
+
+deck.render();</code></pre>
 
             <p>Slides are plain HTML.</p>
 
@@ -47,8 +81,8 @@
             complete with transitions, touch and mouse gestures, and keyboard interaction.</p>
         </div>
 
-        <p><span class="slide">Upstage itself is a tiny (2.3K) <a href="http://yuilibrary.com/">YUI 3</a> Widget</span><span class="slide">,
-        which relies on Widget <em>plugins</em> to provide its features</span><span class="slide">, so you can use only what you need.</span>
+        <p><span id="widget" class="slide">Upstage itself is a tiny (2.3K) <a href="http://yuilibrary.com/">YUI 3</a> Widget</span><span id="plugins" class="slide">,
+        which relies on Widget <em>plugins</em> to provide its features</span><span id="simple" class="slide">, so you can use only what you need.</span>
     </div>
 
     <div class="slide" id="getting-started">
